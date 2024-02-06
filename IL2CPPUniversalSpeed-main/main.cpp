@@ -63,8 +63,8 @@ void main() {
 	Il2CppClass* timeClass = il2cpp_class_from_name(unityCore, "UnityEngine", "Time");
 	setTime = (MethodInfo*)il2cpp_class_get_method_from_name(timeClass, "set_timeScale", 1);
 
-	MH_CreateHook(reinterpret_cast<void**>(GameAssembly + 0xC4C7A0), &fly_hook, (void**)&fly_o); // $$get_IsFlyingEnabled - steam
-	MH_EnableHook(reinterpret_cast<void**>(GameAssembly + 0xC4C7A0));
+	MH_CreateHook(reinterpret_cast<void**>(GameAssembly + 0xC652C0), &fly_hook, (void**)&fly_o); // $$get_IsFlyingEnabled - steam
+	MH_EnableHook(reinterpret_cast<void**>(GameAssembly + 0xC652C0));
 
 	keyHandler();
 }
